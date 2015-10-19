@@ -5,12 +5,15 @@ public class Hospedagem {
 	private String dtCheckin;
 	private Reserva reserva;
 	private Funcionario funcionario;
-	
-	public Hospedagem(String dtCheckin, Reserva reserva, Funcionario funcionario) {
+	private Consumo consumo;
+
+	public Hospedagem(String dtCheckin, Reserva reserva, Funcionario funcionario, 
+			Consumo consumo) {
 		super();
 		this.dtCheckin = dtCheckin;
 		this.reserva = reserva;
 		this.funcionario = funcionario;
+		this.consumo = consumo;
 	}
 
 	public Hospedagem() {
@@ -39,5 +42,13 @@ public class Hospedagem {
 
 	public void setFuncionario(Funcionario funcionario) {
 		this.funcionario = funcionario;
+	}
+	
+	public Consumo getConsumo() {
+		return consumo;
+	}
+
+	public void setConsumo(Consumo consumo) {
+		this.consumo = consumo;
 	}
 }

@@ -6,6 +6,7 @@ public class Reserva {
 	private String dtFinal;
 	private String status;
 	private Cliente cliente;
+	
 	public Reserva(String dtEntrada, String dtFinal, String status,
 			Cliente cliente) {
 		super();
